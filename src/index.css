@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  color: #555;
+  font-family: "Museo Sans Embedded", ariel, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+
+.battle-zone {
+  background-color: #ddd;
+  border-radius: .5em;
+  margin: .25em;
+  padding: .25em;
+  text-align: center;
+}
+
+.battle-zone__form {
+  width: 100%;
+}
+
+
+.page-title {
+  margin: 0;
+  margin-bottom: .5em;
+  padding: 0;
+  text-align: center;
+}
+.page-title__small {
+  display: block;
+  font-size: .8em;
+}
+
+.repo-section__wrapper {
+  text-align: left;
+}
+
+.repo-section {
+  padding: 1em;
+}
+.repo-section__example {
+  font-size: .7em;
+  font-style: italic;
+}
+.repo-section__input {
+  border: 1px solid #bbb;
+  margin-top: .25em;
+  padding: .5em;
+  width: 100%;
+}
+
+.repoStat__section {
+  display: table;
+  margin-top: .5em;
+  width: 100%;
+}
+.repoStat__wrapper {
+  display: table-cell;
+  text-align: center;
+  width: 33%;
+}
+.repoStat__key {
+  display: inline-block;
+  font-size: .6em;
+  padding-bottom: .5em;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+.repoStat__value {
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.battle-zone__submit {
+  background: #00C0FF;
+  border: 1px solid #00A0FF;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: -9em;
+  padding: .5em;
+  position: relative;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  text-shadow: 0 0 0 transparent;
+}
+.battle-zone__submit:hover {
+  background: #0cf;
+}
+
+.winningRepo {
+  color: #FF025C;
+  font-weight: bold;
+}
+
+.winner {
+  color: #FF025C;
+  line-height: 1;
+  -webkit-animation: 1s ease-in-out 0s infinite alternate winnerPulse;
+  -o-animation: 1s ease-in-out 0s infinite alternate winnerPulse;
+  animation: 1s ease-in-out 0s infinite alternate winnerPulse;
+}
+
+
+@media (min-width: 40em) {
+
+  .battle-zone {
+    /*background-color: #fc0;*/
+    border-radius: 2em;
+    left: 50%;
+    margin: 0;
+    min-width: 80%;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .battle-zone__form {
+    display: table;
+    width: 100%;
+  }
+
+  .page-title {
+    background-color: #00C0FF;
+    border-radius: 1em;
+    display: inline-block;
+    margin-top: -3em;
+    padding: 1em;
+  }
+
+
+  .repo-section {
+    display: inline-block;
+    margin-top: .75em;
+    width: 49%;
+  }
+}
+
+@keyframes winnerPulse {
+  from {
+    font-size: 1.5em;
+  }
+  to {
+    font-size: 2em;
+  }
+}
